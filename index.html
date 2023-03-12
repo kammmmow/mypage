@@ -9,45 +9,66 @@
     <title>鴨田遥平のホームページ</title>
 </head>
 <body>
-    <div class="text-center mt-3">
-        <h1>鴨田遥平のホームページ</h1>
-        <h3></h3>
-        <!-- ↑サブタイトルを入力↑ -->
-    </div>
-    <hr><br>
-    <div class="intro">
-        <h3>自己紹介</h3>
-        <div class="d-flex">
-            <img src="picture/mepic.jpg" width="220" height="300" alt="自分の写真">
-            <p>こんにちは。中央大学国際経営学部所属の鴨田遥平と申します。<br>
-                誰よりも真面目なことを取り柄に、日々学業と資格取得に励んでいます。その努力を評価していただき、これまでの通算GPAは3.93/4（2年秋時点）、2年次には学部長賞奨学金をいただきました。<br>
-                サークルはV.codeという文系のためのプログラミングサークルを運営しており、。</p>
+    <!-- ↑サブタイトルを入力↑ -->
+    <div class="tabs">
+        <input id="all" type="radio" name="tab_item" checked>
+        <label class="tab_item" for="all">自己紹介</label>
+        <input id="programming" type="radio" name="tab_item">
+        <label class="tab_item" for="programming">学歴・資格</label>
+        <input id="design" type="radio" name="tab_item">
+        <label class="tab_item" for="design">その他</label>
+        <div class="tab_content" id="all_content">
+            <div class="tab_content_description">
+                <div class="intro">
+                    <div class="d-flex">
+                        <div>
+                            <img src="picture/intro_pic.jpg" alt="自分の写真" class="mr-2" id="mypic">
+                        </div>
+                        <div class="bg-light border border-info mr-2 ml-1">
+                            <h3>中央大学国際経営学部の鴨田遥平（かもだようへい）です！</h3>
+                            <p>誰よりも真面目なことを取り柄に、日々学業と資格取得に励んでいます。結果、GPAは1年次3.89、2年次4.00、通算3.95/4.00を獲得し、学部長賞奨学金をいただくことができました。<br>
+                            ３期<a href="https://glomacjunnakamuralaboratory.on.drv.tw/www.junnlab.com/">中村潤研究室</a>、<a href="https://venture-code-chuo.github.io/homepage/">文系のためのプログラミングサークルV.Code</a>の代表を務めています。</p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+            </div>
         </div>
-    </div>
-    <br>
-    <div class="school">
-        <h3>学歴</h3>
-        <p>北海道札幌国際情報高等学校グローバルビジネス科卒業</p>
-        <p>中央大学国際経営学部国際経営学科在学中</p>
-    <div>
-    <div class="lisence">
-        <h3>資格</h3>
-        <div class="highschool">
-            <h4>高校</h4>
-            <p>・全国商業高等学校協会主催（全商）情報処理検定ビジネス情報部門１級</p>
-            <p>・全国商業高等学校協会主催（全商）商業経済検定試験１級</p>
-            <p>・全国商業高等学校協会主催（全商）英語検定試験１級</p>
-            <p>・社会法人全国経理教育協会主催（全経）簿記能力検定試験３級</p>
-            <p>・文章読解・作成能力検定 準二級</p>
-            <p>・情報処理推進機構主催 ITパスポート試験</p>
+        <div class="tab_content" id="programming_content">
+            <div class="tab_content_description">
+                <div class="school">
+                    <h2 class="text-center">学歴</h2>
+                    <p>北海道札幌国際情報高等学校グローバルビジネス科　卒業</p>
+                    <p>中央大学国際経営学部国際経営学科　在学中</p>
+                <div>
+                <div class="lisence">
+                    <h2 class="text-center mt-4">資格</h2>
+                    <div class="highschool">
+                        <h3>高校</h3>
+                        <p>・全国商業高等学校協会主催（全商）情報処理検定ビジネス情報部門１級</p>
+                        <p>・全国商業高等学校協会主催（全商）商業経済検定試験１級</p>
+                        <p>・全国商業高等学校協会主催（全商）英語検定試験１級</p>
+                        <p>・社会法人全国経理教育協会主催（全経）簿記能力検定試験３級</p>
+                        <p>・文章読解・作成能力検定 準二級</p>
+                        <p>・情報処理推進機構主催 ITパスポート試験</p>
+                    </div>
+                    <div class="university">
+                        <h3>大学</h3>
+                        <p>・個人情報管理士（特定）</p>
+                        <p>・情報処理推進機構主催 基本情報技術者試験</p>
+                        <p>・情報処理推進機構主催 情報セキュリティマネジメント試験</p>
+                        <p>・３級ファイナンシャル・プランニング技能士</p>
+                        <p>・文部科学省後援 ビジネス実務マナー検定 ２級</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="university">
-            <h4>大学</h4>
-            <p>・個人情報管理士（特定）</p>
-            <p>・情報処理推進機構主催 基本情報技術者試験</p>
-            <p>・情報処理推進機構主催 情報セキュリティマネジメント試験</p>
-            <p>・３級ファイナンシャル・プランニング技能士</p>
-            <p>・文部科学省後援 ビジネス実務マナー検定 ２級</p>
+        <div class="tab_content" id="design_content">
+            <div class="tab_content_description">
+                <div class="others">
+                    <p>あああ</p>
+                </div>
+            </div>
         </div>
     </div>
 </body>
