@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/css/modaal.min.css">
     <link rel="stylesheet" href="style.css">
+    <title>鴨田遥平のホームページ</title>
 </head>
 <body>
     <!-- ↑サブタイトルを入力↑ -->
@@ -17,6 +19,11 @@
         <div class="tab_content" id="all_content">
             <div class="tab_content_description">
                 <div class="intro">
+                    <h2><a href="#info" class="modal-open">自己紹介</a></h2>
+                    <section id="info">
+                        <h2>鴨田遥平の自己紹介ホームページです！</h2>
+                        <p>大学での学業と両立してプログラミング歴1年！<br>技術は乏しいながらもアピールページを作成したのでぜひご覧ください！</p>
+                    </section>
                     <div class="d-flex">
                         <div>
                             <img src="picture/intro_pic.jpg" alt="自分の写真" class="mr-2" id="mypic">
@@ -101,5 +108,9 @@
             </div>
         </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/js/modaal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
