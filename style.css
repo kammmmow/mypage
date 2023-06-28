@@ -22,9 +22,8 @@ h3{
 h4{
 	font-size: 1rem;
 }
-#mypic img{
-	height: 300px;
-	width: 220px
+#mypic{
+	width: 600px;
 }
 
 /*タブ切り替え全体のスタイル*/
@@ -124,6 +123,10 @@ header {
   line-height: 60px;
   font-size: 20px;
   font-weight: 600;
+}
+
+#logopic{
+	height: 58px;
 }
 
 nav {
