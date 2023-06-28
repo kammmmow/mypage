@@ -5,12 +5,16 @@ font-size: 100%;
 /* bodyのフォントサイズを1.6em（16px）に設定 */
 body {
 	font-size: 1.2em;
+	background-image: url(picture/background.jpg);
+	background-repeat: repeat-y;  
+	background-size:  contain;   
 }
 h1{
 	font-size: 2.5rem;
 }
 h2{
 	font-size: 2rem;
+	font-family: 'Kiwi Maru', serif;
 }
 h3{
 	font-size: 1.5rem;
@@ -18,7 +22,7 @@ h3{
 h4{
 	font-size: 1rem;
 }
-img{
+#mypic img{
 	height: 300px;
 	width: 220px
 }
@@ -78,21 +82,18 @@ input[name="tab_item"] {
 }
 
 /*infoエリアをはじめは非表示*/
-#info{
+#info, #leadership, #inquiring_mind, #diligent{
 	display: none;
 }
-
 /*モーダルの横幅を変更したい場合*/
 .modaal-container{
     max-width: 600px;
 }
-
 /*モーダルのボタンの色を変更したい場合*/
 .modaal-close:after, 
 .modaal-close:before{
 	background:#ccc;	
 }
-
 .modaal-close:focus:after,
 .modaal-close:focus:before,
 .modaal-close:hover:after,
@@ -100,11 +101,85 @@ input[name="tab_item"] {
 	background:#666;
 }
 
+.header-box {
+  height: 60px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 60px;
+  width: 100%;
+  background: rgb(214, 255, 244, 0.7);
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 20%;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+nav {
+  width: 30%;
+}
+
+#header a {
+  display: block;
+  width: 100%;
+  line-height: 80px;
+  text-align: center;
+}
+
+.mobile-menu {
+  display: none;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 50px;
+  text-align: center;
+}
+
+/* 強みのCSS */
+a.btn--red.btn--cubic {
+  color: #fff;
+  background-color: #3082fd;
+  border-bottom: 5px solid #185685;
+}
+
+a.btn--red.btn--cubic:hover {
+  margin-top: 3px;
+  border-bottom: 2px solid #185685;
+}
+
+a.btn--radius {
+  border-radius: 100vh;
+}
+
+.fa-position-right {
+  position: absolute;
+  top: calc(50% - .5em);
+  right: 1rem;
+}
+.annotation{
+	background-color: rgb(248, 248, 248);
+}
 
 /* ウィンドウ幅が0〜479pxの場合に適用するCSS */
 @media screen and ( max-width:600px )
 {
 	p{
+		font-size: 0.8rem;
+	}
+	.annotation a{
+		font-size: 0.8rem;
+	}
+	li{
 		font-size: 0.8rem;
 	}
 	h1{
@@ -119,13 +194,19 @@ input[name="tab_item"] {
 	h4{
 		font-size: 0.8rem; /* 15px */
 	}
-
-	img{
-		height: 180px;
-		width: 140px;
+	#mypic{
+		width: 100%;
 	}
-
+	#logopic{
+		height: 58px;
+	}
 	.long{
+		display: none;
+	}
+	.mobile-menu {
+		display: block;
+	}
+	.pc-menu {
 		display: none;
 	}
 }

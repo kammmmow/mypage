@@ -7,10 +7,31 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/css/modaal.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap" rel="stylesheet">
     <title>鴨田遥平のホームページ</title>
 </head>
 <body>
+    <!-- ヘッダー高さ分の余白   -->
+    <div class="header-box"></div>
+    <header>
+        <div class="logo">
+            <a href="#info" id="modal-open" class="text-reset">
+                <img src="picture/logo.png" alt="ロゴの画像" id="logopic">
+            </a>
+        </div>
+        <!-- PC用表示 -->
+        <nav class="pc-menu">
+            <a href="carreer.html" id="header">履歴書</a>
+        </nav>
+        <!-- モバイル用表示 -->
+        <nav class="mobile-menu">
+            <a href="carreer.html" id="header">履歴書</a>
+        </nav>
+    </header>
     <!-- ↑サブタイトルを入力↑ -->
+<!--     #タブメニュー専用
     <div class="tabs">
         <input id="all" type="radio" name="tab_item" checked>
         <label class="tab_item" for="all">自己紹介</label>
@@ -18,30 +39,32 @@
         <label class="tab_item" for="programming">実績・学歴・資格</label>
         <div class="tab_content" id="all_content">
             <div class="tab_content_description">
+-->
                 <div class="intro">
-                    <h2><a href="#info" id="modal-open" class="text-reset">自己紹介</a></h2>
+                    <!-- モーダルウィンドウの中身 -->
                     <section id="info">
                         <h2>鴨田遥平の自己紹介ホームページです！</h2>
-                        <p>学業と両立しながらプログラミング歴1年！<br>技術は乏しいながらもアピールページを作成したのでぜひご覧ください！</p>
+                        <p>
+                            学業と両立しながらプログラミング歴約1年半！<br>
+                            技術は乏しいながらもアピールページを作成したのでぜひご覧ください！<br>
+                            <u>※PCにはまだ未対応のため、スマートフォンでご覧ください。</u>
+                        </p>
                     </section>
-                    <div class="d-flex">
-                        <div>
-                            <img src="picture/intro_pic.jpg" alt="自分の写真" class="mr-2" id="mypic">
-                        </div>
-                        <div class="shadow p-3 mb-5 bg-light border border-info mr-2 ml-1">
-                            <h3>中央大学国際経営学部の鴨田遥平（かもだようへい）です！</h3>
-                            <p>誰よりも真面目なことを取り柄に、日々学業と資格取得に励んでいます。<br>
-                                結果、GPAは1年次3.89、2年次4.00、通算3.95/4.00を獲得し、学部長賞奨学金をいただくことができました。<br>
-                                ３期<a href="https://glomacjunnakamuralaboratory.on.drv.tw/www.junnlab.com/" target="_blank">中村潤研究室</a>、<a href="https://venture-code-chuo.github.io/homepage/" target="_blank">文系のためのプログラミングサークルV.Code</a>の代表を務めています。<br>
-                                <div class="long">二つの組織の代表として、日々係などの管理や課題特定・解決に取り組んでいます。<br>
-                                ゼミでの研究テーマは北海道と日本の一極集中における類似点と分析モデルの考案です。<br>
-                                北海道での地方創生政策を日本での政策に活用する、もしくは逆でも、スケールは違くとも性質が似ている二つを比較し活用するための分析モデルを考案したいと考えています。<br>
-                                この発想を軸に、将来的にはビジネスモデルとして地方創生を行う方法を考えています。</div>
-                            </p>
-                        </div>
+                    <div>
+                        <img src="picture/mepic2.jpeg" alt="自分の写真" class="p-3" id="mypic">
                     </div>
-                    <br>
-                    <h2>趣味</h2> 
+                    <div class="shadow p-3 m-2 bg-light border border-info ">
+                        <h3>中央大学国際経営学部の鴨田遥平（かもだようへい）です！</h3>
+                        <p>北海道札幌市出身。趣味はネットサーフィンやバスケ、野球観戦です。<br>
+                            誰よりも真面目なことを取り柄に、日々自己研鑽に励んでいます。<br>
+                            結果、大学での成果としては通算GPA3.95/4.00（2年次終了時点）を獲得しました。<br>
+                            ３期<a href="https://glomacjunnakamuralaboratory.on.drv.tw/www.junnlab.com/" target="_blank">中村潤研究室</a>、<a href="https://venture-code-chuo.github.io/homepage/" target="_blank">文系のためのプログラミングサークルV.Code</a>の代表を務めています。
+                            二つの組織の代表として、日々係管理や課題特定・解決に取り組んでいます。<br>
+                            現在は、大学を3年で早期卒業し大学院に進学することを目標に努力しています。
+                        </p>
+                    </div>
+<!--
+                    <h2 class="text-center mt-2">趣味</h2> 
                     <div class="d-flex">
                         <div class="shadow p-3 mb-5 bg-light border border-danger mr-2 ml-1">
                             <p>北海道出身であることもあり、スキーが大好きです！美しい雪景色の中で爽快感の溢れるスキーは最高です。<br>
@@ -50,13 +73,81 @@
                             </p>
                         </div>
                         <img src="picture/sking.JPG" alt="自分の写真" class="mr-2" id="ski">
-                    </div>
-                    <br>
+                    </div> 
+-->
                     <!-- <h2>研究テーマ</h2>
                     <div>
                     </div> -->
                 </div>
+
                 <hr>
+                <div class="strength">
+                    <h2 class="text-center mt-2">強み</h2>
+                    <div class="strength_list">
+                        <div class="d-flex justify-content-center">
+                            <a href="#leadership" id="modal-open-click1" class="m-3 btn btn--red btn--radius btn--cubic">
+                                <div class="p-2 mr-4 ml-4">リーダーシップ</div>
+                            </a>
+                        </div>
+                        <!-- 強みモーダルウィンドウの中身 -->
+                        <section id="leadership">
+                            <p>
+                                私は中学1年生から高校3年まで学級代表を務め、大学に入ってからはゼミの代表とサークルの代表を務めています。
+                                長い期間組織のリーダーを務めた経験から、組織のマネジメント力やメンバーをまとめる能力といったリーダーシップを身につけました。<br>
+                                最近直面している課題は<strong>「いかに人を動かすか」</strong>ということです。これまではリーダーとして自分が業務のカバーに回ることでプロジェクトをまとめていましたが、
+                                それではメンバーの教育にならないことに気づき、動かない人が能動的に動くように教育する能力が必要だと実感しました。
+                            </p>
+                        </section>
+                        <div class="d-flex justify-content-between">
+                            <a href="#inquiring_mind" id="modal-open-click2" class="btn btn--red btn--radius btn--cubic m-2">
+                                <div class="p-2 mr-4 ml-4">探究心</div>
+                            </a>
+                            <!-- 探究心モーダルウィンドウの中身 -->
+                            <section id="inquiring_mind">
+                                <p>
+                                    私はこれまで約2年半の大学生活を探究心を持って過ごしてきました。<br>
+                                    大学講義では疑問点を持ち教授に質問することを心がけており、興味を持ったことの学びを深めています。<br>
+                                    講義以外では、興味を持った分野の資格勉強を行ってきました。
+                                    また、プログラミングに興味を持ったことをきっかけにプログラミングサークルに参加し、1年半経過した現在でもスキル向上に努めています。
+                                    最近ではIoTに興味を持ったため、Raspberry Piで電子工作してセンサーから情報を取得することに取り組んでいます。<br>
+                                    このように私は、これまで挑戦したことないことであっても<strong>興味を持ったことにはすぐに取り組み継続する探究心</strong>を持っています。
+                                </p>
+                            </section>
+                            <a href="#diligent" id="modal-open-click3" class="btn btn--red btn--radius btn--cubic m-2">
+                                <div class="p-2 mr-4 ml-4">真面目</div>
+                            </a>
+                            <!-- 真面目モーダルウィンドウの中身 -->
+                            <section id="diligent">
+                                <p>
+                                    私は誰よりも真面目である自信があります。
+                                    課題一つ一つに妥協せず取り組み、提出期限を確実に守ることで、通算GPAは3.95/4.0（2年次終了時点）を獲得しました。<br>
+                                    他の面では、先方や教授、グループメンバーへの連絡を欠かさず、リマインドや細かい報連相などに気を配るようにしています。<br>
+                                    このような「真面目さ」が私の強みの一つとして挙げられます。<br>
+                                    しかしその反面、思い詰めすぎて悩むことや一つの課題に時間をかけすぎること、それによって自分の時間を多く犠牲にしてしまうことなど、欠点とも捉えられる面もあります。
+                                    そのため、これからは「要領の良さ」「セルフメンタルケア」「親しみやすい気楽さ」を意識した「真面目」な人間になりたいと思います。
+                                    </p>
+                            </section>
+                        </div>
+                    <div>
+                </div>
+                <hr>
+                <div class="interest">
+                </div>
+                <div class="research">
+                    <h2 class="text-center mt-2">研究内容</h2>
+                    <div class="shadow p-2 bg-light border border-success mr-2 ml-2">
+                        <h3><strong>二酸化炭素濃度センサーとSlackによる換気を促す通知システムの試作</strong></h3>
+                        <p>
+                            部屋の二酸化炭素濃度が人間の集中力に影響を及ぼすという問題提起がある。
+                            これは、テレワーク化が進み自宅の部屋が労働環境と化している現代で特に注目すべき問題であるだろう。
+                            そこで、Raspberry Piと二酸化炭素濃度センサーを用いて部屋の二酸化炭素濃度を定期測定し、
+                            閾値を超えた際にSlackにて換気を促す通知をするシステムの試作を行う。
+                            （研究中）
+                        </p>
+                    </div>
+                </div>
+                <hr>
+<!-- #タブメニュー専用
                 <div class="d-flex flex-row-reverse">
                     <p>更新：2023/4/14</p>
                 </div>
@@ -64,57 +155,73 @@
         </div>
         <div class="tab_content" id="programming_content">
             <div class="tab_content_description">
+-->
                 <div class="zisseki">
                     <h2 class="text-center mt-4">実績・活動</h2>
-                    <div class="shadow p-3 mb-5 bg-light border border-primary mr-1 ml-1">
-                        <p>
-                            ・<a href="https://venture-code-chuo.github.io/homepage/" target="_blank">文系のためのプログラミングサークルV.Codeのホームページ</a>の更新、管理。<br>
-                            ・サークルハッカソンにて作成、リリースした<a href="https://fec-app.link/fec_app_folder/users/top_page/" target="_blank">空き教室確認システム</a>の全てのUIのデザインを作成。<br>
-                            ・学部の価値向上に貢献したと認められた団体・個人を表彰するコンテスト<a href="https://www.chuo-u.ac.jp/academics/faculties/globalmanagement/news/2023/03/65426/" target="_blank">"Globac Award 2022"</a>優秀賞をV.Codeとして受賞<br>
-                            ・学部にて特に優秀な成績を収めたとされる個人に送られる"学部長賞給付奨学金"に採用される。<br>
-                            ・<a href="https://toruyoshikawa.org/" target="_blank">一般財団法人吉川徹財団</a> 第一期奨学生に採用される。<br>
-                            ・株式会社三技協様の協力のもと、ゼミ活動で行った"SHIPsプロジェクト"にて考案したビジネスアイデアを、住友重機械プロセス機器株式会社様の本社でプレゼンする。<br>
-                        </p>
+                    <div class="shadow pt-3 pr-3 bg-light border border-primary m-2">
+                        <ul>
+                            <li><a href="https://venture-code-chuo.github.io/homepage/" target="_blank">文系のためのプログラミングサークルV.Codeのホームページ</a>の更新、管理。</li>
+                            <li>同サークルにて、全3回（各100分）のHTML講座を開催する。</li>
+                            <li>同サークルハッカソンにて作成、リリースした<a href="https://fec-app.link/fec_app_folder/users/top_page/" target="_blank">空き教室確認システム</a>の全てのUIのデザインを作成。</li>
+                            <li>学部の価値向上に貢献したと認められた団体・個人を表彰するコンテスト<a href="https://www.chuo-u.ac.jp/academics/faculties/globalmanagement/news/2023/03/65426/" target="_blank">"Globac Award 2022"</a>優秀賞をV.Codeとして受賞</li>
+                            <li>学部にて特に優秀な成績を収めたとされる個人に送られる"学部長賞給付奨学金"に採用される。</li>
+                            <li><a href="https://toruyoshikawa.org/" target="_blank">一般財団法人吉川徹財団</a> 第一期奨学生に採用される。</li>
+                            <li>株式会社三技協様の協力のもと、ゼミ活動で行った"SHIPsプロジェクト"にて考案したビジネスアイデアを、住友重機械プロセス機器株式会社様の本社でプレゼンする。</li>
+                            <li>八王子市立由木東小学校にて、小学1年生が初めてパソコンを扱う授業のボランティアに参加する。</li>
+                        </ul>
                     </div>
                 </div>
-                <br>
+                <hr>
                 <div class="school">
                     <h2 class="text-center">学歴</h2>
                     <div class="shadow p-3 mb-5 bg-light border border-primary mr-1 ml-1">
                         <p>北海道札幌国際情報高等学校グローバルビジネス科　卒業</p>
-                        <p>中央大学国際経営学部国際経営学科　在学中</p>
+                        <p>中央大学国際経営学部国際経営学科　在学中（早期卒業予定）</p>
+                        <p>中央大学大学院経済学研究科　進学予定</p>
                     </div>
                 <div>
-                <br>
+                <hr>
                 <div class="lisence">
                     <h2 class="text-center mt-4">資格</h2>
                     <div class="shadow p-3 mb-5 bg-light border border-primary mr-1 ml-1">
                         <div class="highschool">
                             <h3>高校</h3>
-                            <p>・全国商業高等学校協会主催（全商）情報処理検定ビジネス情報部門１級</p>
-                            <p>・全国商業高等学校協会主催（全商）商業経済検定試験１級</p>
-                            <p>・全国商業高等学校協会主催（全商）英語検定試験１級</p>
-                            <p>・社会法人全国経理教育協会主催（全経）簿記能力検定試験３級</p>
-                            <p>・文章読解・作成能力検定 準二級</p>
-                            <p>・情報処理推進機構主催 ITパスポート試験</p>
+                            <p>
+                                ・全商 情報処理検定ビジネス情報部門１級<br>
+                                ・全商 商業経済検定試験１級<br>
+                                ・全商 英語検定試験１級<br>
+                                ・全経 簿記能力検定試験３級<br>
+                                ・文章読解・作成能力検定 準二級<br>
+                                ・情報処理推進機構主催 ITパスポート試験<br>
+                            </p>
                         </div>
                         <div class="university">
                             <h3>大学</h3>
-                            <p>・個人情報管理士（特定）</p>
-                            <p>・情報処理推進機構主催 基本情報技術者試験</p>
-                            <p>・情報処理推進機構主催 情報セキュリティマネジメント試験</p>
-                            <p>・３級ファイナンシャル・プランニング技能士</p>
-                            <p>・文部科学省後援 ビジネス実務マナー検定 ２級</p>
+                            <p>
+                                ・個人情報管理士（特定）<br>
+                                ・情報処理推進機構主催 基本情報技術者試験<br>
+                                ・情報処理推進機構主催 情報セキュリティマネジメント試験<br>
+                                ・３級ファイナンシャル・プランニング技能士<br>
+                                ・文部科学省後援 ビジネス実務マナー検定２級<br>
+                            </p>
                         </div>
                     </div>
                 </div>
-                <hr>
-                <div class="d-flex flex-row-reverse">
-                    <p>更新：2023/4/14</p>
+                <div class="annotation pl-2 pr-2">
+                    <hr>
+                    <p><strong>お問い合わせはこちら</strong><br>
+                        大学メール：<a href="a21.chgr@g.chuo-u.ac.jp">a21.chgr@g.chuo-u.ad.jp</a>（2024/3/31まで有効）<br>
+                        個人メール：<a href="kamoda.yohei@gmail.com">kamoda.yohei@gmail.com</a>
+                    </p>
+                    <hr>
+                    <p>更新：2023/6/29</p>
+                    <hr>
                 </div>
+<!-- #タブメニュー専用
             </div>
         </div>
     </div>
+-->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/js/modaal.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>

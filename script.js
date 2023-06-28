@@ -18,3 +18,36 @@ after_close:function(){// モーダルが閉じた後に行う動作
     $('html').css('overflow-y','scroll');/*縦スクロールバーを出す*/
 }
 });
+
+//モーダル表示
+$("#modal-open-click1").modaal({
+overlay_close:true,//モーダル背景クリック時に閉じるか
+before_open:function(){// モーダルが開く前に行う動作
+    $('html').css('overflow-y','hidden');/*縦スクロールバーを出さない*/
+},
+after_close:function(){// モーダルが閉じた後に行う動作
+    $('html').css('overflow-y','scroll');/*縦スクロールバーを出す*/
+}
+});
+
+//モーダル表示
+$("#modal-open-click2").modaal({
+overlay_close:true,//モーダル背景クリック時に閉じるか
+before_open:function(){// モーダルが開く前に行う動作
+    $('html').css('overflow-y','hidden');/*縦スクロールバーを出さない*/
+},
+after_close:function(){// モーダルが閉じた後に行う動作
+    $('html').css('overflow-y','scroll');/*縦スクロールバーを出す*/
+}
+});
+
+//モーダル表示
+$("#modal-open-click3").modaal({
+overlay_close:true,//モーダル背景クリック時に閉じるか
+before_open:function(){// モーダルが開く前に行う動作
+    $('html').css('overflow-y','hidden');/*縦スクロールバーを出さない*/
+},
+after_close:function(){// モーダルが閉じた後に行う動作
+    $('html').css('overflow-y','scroll');/*縦スクロールバーを出す*/
+}
+});
