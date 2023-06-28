@@ -5,7 +5,7 @@ font-size: 100%;
 /* bodyのフォントサイズを1.6em（16px）に設定 */
 body {
 	font-size: 1.2em;
-	background-image: url(picture/background.jpg);
+	background-image: url(picture/Background.jpg);
 	background-repeat: repeat-y;  
 	background-size:  contain;   
 }
