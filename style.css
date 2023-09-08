@@ -26,60 +26,6 @@ h4{
 	width: 600px;
 }
 
-/*タブ切り替え全体のスタイル*/
-.tabs {
-	margin-top: 50px;
-	padding-bottom: 40px;
-	background-color: #c7f9ff;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-	margin: 0 auto;
-}
-
-/*タブのスタイル*/
-.tab_item {
-	width: calc(100%/2);
-	height: 50px;
-	border-bottom: 3px solid #f5793f;
-	background-color: #d9d9d9;
-	line-height: 50px;
-	font-size: 16px;
-	text-align: center;
-	color: #565656;
-	display: block;
-	float: left;
-	text-align: center;
-	font-weight: bold;
-	transition: all 0.2s ease;
-}
-.tab_item:hover {
-	opacity: 0.75;	
-}
-
-/*ラジオボタンを全て消す*/
-input[name="tab_item"] {
-	display: none;
-}
-
-/*タブ切り替えの中身のスタイル*/
-.tab_content {
-	display: none;
-	padding: 20px 20px 0;
-	clear: both;
-	overflow: hidden;
-}
-
-/*選択されているタブのコンテンツのみを表示*/
-#all:checked ~ #all_content,
-#programming:checked ~ #programming_content {
-	display: block;
-}
-
-/*選択されているタブのスタイルを変える*/
-.tabs input:checked + .tab_item {
-	background-color: #f5793f;
-	color: #fff;
-}
-
 /*infoエリアをはじめは非表示*/
 #info, #leadership, #inquiring_mind, #diligent{
 	display: none;
@@ -142,9 +88,9 @@ nav {
 
 .mobile-menu {
   display: none;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 600;
-  line-height: 50px;
+  line-height: 60px;
   text-align: center;
 }
 
@@ -153,6 +99,7 @@ a.btn--red.btn--cubic {
   color: #fff;
   background-color: #3082fd;
   border-bottom: 5px solid #185685;
+  width:75%;
 }
 
 a.btn--red.btn--cubic:hover {
