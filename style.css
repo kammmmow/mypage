@@ -8,7 +8,15 @@ body {
 	background-image: url(picture/Background.jpg);
 	background-repeat: repeat-y;  
 	background-size:  contain;   
+	margin: 0;
 }
+
+.content_body{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
 h1{
 	font-size: 2.5rem;
 }
@@ -54,9 +62,9 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  height: 60px;
+  height: 65px;
   width: 100%;
-  background: rgb(214, 255, 244, 0.7);
+  background: rgb(214, 255, 244, 0.95);
   z-index: 100;
   display: flex;
   justify-content: space-between;
@@ -75,15 +83,57 @@ header {
 	height: 58px;
 }
 
-nav {
-  width: 30%;
-}
-
 #header a {
   display: block;
   width: 100%;
   line-height: 80px;
   text-align: center;
+}
+
+/* ハンバーガーメニューの画像関係 */
+.menu_container {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: calc(50% - 25px);
+	left: 20px;
+	cursor: pointer;
+}
+.menu_container img {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.menu_open {
+	opacity: 1;
+}
+.menu_close {
+	opacity: 0;
+}
+
+/* ハンバーガーメニューの中身 */
+.hamburger_menu {
+	background-color: rgba(0,0,0,.5);
+	position: absolute;
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 100%;
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	color: white;
+	text-align: center;
+	transition: .5s;
+}
+.hamburger_menu ul {
+	padding-inline: 0;
+}
+.hamburger_menu li {
+	list-style: none;
+	margin-top: 1.5rem;
+	cursor: pointer;
 }
 
 .mobile-menu {
