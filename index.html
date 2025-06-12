@@ -1,240 +1,156 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/css/modaal.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap" rel="stylesheet">
-    <title>鴨田遥平のホームページ</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>鴨田遥平のポートフォリオ - リダイレクト中...</title>
+    
+    <!-- すぐにリダイレクト -->
+    <meta http-equiv="refresh" content="3;url=https://kammmmow.github.io/kamoda-portfolio/">
+    
+    <!-- 検索エンジン向けの正規URL -->
+    <link rel="canonical" href="https://kammmmow.github.io/kamoda-portfolio/">
+    
+    <!-- SEO対策 -->
+    <meta name="description" content="鴨田遥平のポートフォリオサイトが新しいURLに移転しました。">
+    <meta name="robots" content="noindex,follow">
+    
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+        
+        .redirect-container {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            width: 90%;
+        }
+        
+        .logo {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            animation: bounce 2s infinite;
+        }
+        
+        h1 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            font-weight: 300;
+        }
+        
+        .loading {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            border: 3px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            border-top-color: white;
+            animation: spin 1s ease-in-out infinite;
+            margin: 20px 0;
+        }
+        
+        .redirect-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 24px;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        .redirect-link:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .countdown {
+            font-size: 1.2rem;
+            margin: 15px 0;
+            font-weight: bold;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-10px);
+            }
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+        
+        @media (max-width: 600px) {
+            .redirect-container {
+                padding: 30px 20px;
+            }
+            
+            .logo {
+                font-size: 2.5rem;
+            }
+            
+            h1 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
 </head>
 <body>
-    <div class="content_body">
-        <!-- ヘッダー高さ分の余白   -->
-        <div class="header-box"></div>
-        <header>
-            <div class="logo">
-                <a href="#info" id="modal-open" class="text-reset">
-                    <img src="picture/logo2.png" alt="ロゴの画像" id="logopic">
-                </a>
-            </div>
-            <!-- 右上メニュー   -->
-            <!-- 
-            <nav class="pc-menu">
-                <a href="carreer.html" id="header">活動報告</a>
-                <a href="carreer.html" id="header">Portfolio</a>
-            </nav>
-            <nav class="mobile-menu">
-                <div class="d-flex">
-                    <a href="activity.html" class="mr-2" id="header">活動報告</a>
-                    <a href="portfolio.html" class="mr-2" id="header">ポートフォリオ</a>
-                </div>
-            </nav> -->
-
-            <!-- <div class="menu_container">
-                <img class="menu_open" src="ham-menu-image01.png">
-                <img class="menu_close" src="ham-menu-image02.png">    
-            </div>-->
-        </header>
-        <nav class="hamburger_menu">
-            <ul>
-                <li>ホーム</li>
-                <li>活動報告</li>
-                <li>ポートフォリオ</li>
-            </ul>
-        </nav>
-        <div class="intro">
-            <!-- モーダルウィンドウの中身 -->
-            <section id="info">
-                <h2>鴨田遥平の自己紹介ホームページです！</h2>
-                <p>
-                    学業と両立しながらプログラミング歴約1年半！<br>
-                    技術は乏しいながらもアピールページを作成したのでぜひご覧ください！<br>
-                    <u>※PCにはまだ未対応のため、ぜひスマートフォンでご覧ください。</u>
-                </p>
-            </section>
-            <div class="d-flex justify-content-center">
-                <h2 class="mt-3">中央大学の鴨田遥平です！</h2>
-            </div>
-            <div class="d-flex justify-content-center">
-                <img src="picture/mepic2.jpeg" alt="自分の写真" class="p-3" id="mypic">
-            </div>
-            <div class="shadow p-3 m-2 bg-light border border-info">
-                <p>
-                    出身：北海道札幌市<br>
-                    趣味：バスケ、スキー、野球観戦<br>
-                    ３期<a href="https://glomacjunnakamuralaboratory.on.drv.tw/www.junnlab.com/" target="_blank">中村潤研究室</a>、<a href="https://venture-code-chuo.github.io/homepage/" target="_blank">文系のためのプログラミングサークルV.Code</a>の元代表。
-                    ３年で早期（飛び級）卒業かつ主席に次ぐ次席で中央大学国際経営学部を卒業。<br>
-                    現在（2024年5月24日時点）は中央大学大学院経済学研究科の修士1年で、2026年卒の扱いになります。
-                </p>
-            </div>
-        </div>
-
-        <hr>
-        <div class="strength">
-            <h2 class="text-center mt-2">強み</h2>
-            <div class="strength_list">
-                <div id="strength1">
-                    <div class="d-flex justify-content-center">
-                        <a href="#leadership" id="modal-open-click1" class="m-2 btn btn--red btn--radius btn--cubic">
-                            <div class="p-2 mr-4 ml-4">リーダーシップ</div>
-                        </a>
-                    </div>
-                    <!-- リーダーシップモーダルウィンドウの中身 -->
-                    <section id="leadership">
-                        <p>
-                            私は中学1年生から高校3年まで学級代表を務め、大学に入ってからはゼミの代表とサークルの代表を務めています。<br>
-                            長い期間組織のリーダーを務めた経験から、組織のマネジメント力やメンバーをまとめる能力といったリーダーシップを身につけました。<br>
-                            最近直面している課題は<strong>「いかに人を動かすか」</strong>ということです。これまではリーダーとして自分が業務のカバーに回ることでプロジェクトをまとめていましたが、
-                            それではメンバーの教育にならないことに気づき、動かない人が能動的に作業するよう促す能力が必要だと実感しました。
-                        </p>
-                    </section>
-                </div>
-                <div id="strength2">
-                    <div class="d-flex justify-content-center">
-                        <a href="#inquiring_mind" id="modal-open-click2" class="m-2 btn btn--red btn--radius btn--cubic">
-                            <div class="p-2 mr-4 ml-4">探究心</div>
-                        </a>
-                    </div>
-                    <!-- 探究心モーダルウィンドウの中身 -->
-                    <section id="inquiring_mind">
-                        <p>
-                            私はこれまで約3年間の大学生活を探究心を持って過ごしてきました。<br>
-                            大学講義では疑問点を持ち教授に質問することを心がけており、興味を持ったことの学びを深めています。<br>
-                            講義以外では、興味を持った分野の資格勉強や外部講演への参加を行ってきました。
-                            また、プログラミングに興味を持ったことをきっかけにプログラミングサークルに参加し、2年経過した現在でもスキル向上に努めています。
-                            このように私は、これまで挑戦したことないことであっても<strong>興味を持ったことにはすぐに取り組み継続する探究心</strong>を持っています。
-                        </p>
-                    </section>
-                </div>
-                <div id="strength3">
-                    <div class="d-flex justify-content-center">
-                        <a href="#diligent" id="modal-open-click3" class="m-2 btn btn--red btn--radius btn--cubic">
-                            <div class="p-2 mr-4 ml-4">真面目と柔軟のバランス</div>
-                        </a>
-                    </div>
-                    <!-- 真面目モーダルウィンドウの中身 -->
-                    <section id="diligent">
-                        <p>
-                            私は誰よりも真面目でありながら、柔軟さも持ち合わせています。
-                            「真面目」では、分かりやすい数値で表すと<strong>学部卒業時点の通算GPAで3.92/4.0</strong>を獲得しました。<br>
-                            その他、先方や教授、グループメンバーへの連絡を欠かさず、リマインドや細かい報連相などに気を配るようにしています。<br>
-                            しかし、真面目なだけでは発想が及ばないことや機転が利かないことがありました。<br>
-                            その経験から、<strong>真面目を前提として柔軟な考え方を持つ</strong>ことで、問題解決能力の向上や人脈の拡大といった成長を遂げることができました。
-                        </p>
-                    </section>
-                </div>
-            <div>
-        </div>
-        <hr>
-        <div class="interest">
-        </div>
-        <div class="research">
-            <h2 class="text-center mt-2">研究内容（学部）</h2>
-            <div class="shadow p-3 bg-light border border-success mr-2 ml-2">
-                <h3><strong>二酸化炭素濃度上昇に起因する労働生産性低下を防止する通知システムの開発</strong></h3>
-                <p>
-                    部屋の二酸化炭素濃度が人間の集中力に影響を及ぼすという問題提起がある。
-                    これは、テレワーク化が進み自宅の部屋が労働環境と化している現代で特に注目すべき問題であるだろう。
-                    そこで、Raspberry Piと二酸化炭素濃度センサーを用いて部屋の二酸化炭素濃度を定期測定し、
-                    閾値を超えた際にSlackにて換気を促す通知をするシステムの開発を行う。<br>
-                    結果、作成したシステムは正常に作動し、換気を促す通知によって部屋の二酸化炭素濃度を閾値以下に抑えることができた。
-                    しかし、労働生産性等がどのように変わったかまでは検討できておらず、今後も取り組みの余地が残っている。
-                </p>
-                <hr>
-                <p>
-                    2024年2月に査読付き国際学会である<a href="https://alife-robotics.co.jp/" target="_blank">ICAROB</a>
-                    （<a href="https://www.chuo-u.ac.jp/academics/faculties/globalmanagement/news/2024/03/70505/" target="_blank">学部ニュース記事</a>）
-                    にて発表しました。
-                </p>
-            </div>
-        </div>
-        <hr>
-        <div class="zisseki">
-            <h2 class="text-center mt-4">実績・活動</h2>
-            <div class="shadow pt-3 pr-3 bg-light border border-primary m-2">
-                <ul>
-                    <div id="IT_skills">
-                        <h3>IT関係</h3>
-                        <li><a href="https://venture-code-chuo.github.io/homepage/" target="_blank">文系のためのプログラミングサークルV.Codeのホームページ</a>の更新、管理を行いました。</li>
-                        <li>同サークルにて、代表として全3回のHTML講座、全2回のCSS講座、全6回のPYTHON講座（各100分）を開催しました。</li>
-                        <li>同サークルハッカソンにて作成、リリースした<a href="https://fec-app.link/fec_app_folder/users/top_page/" target="_blank">空き教室確認システム</a>の全てのUIのデザインを作成しました。</li>
-                        <li>学部の価値向上に貢献したと認められた団体・個人を表彰するコンテスト<a href="https://www.chuo-u.ac.jp/academics/faculties/globalmanagement/news/2023/03/65426/" target="_blank">"Globac Award 2022"</a>優秀賞をV.Codeとして受賞しました。</li>
-                        <li>学部の価値向上に貢献したと認められた団体・個人を表彰するコンテスト<a href="https://www.chuo-u.ac.jp/academics/faculties/globalmanagement/news/2024/03/70440/" target="_blank">"Globac Award 2023"</a>Active Organizer AwardをV.Codeとして受賞しました。</li>
-                    </div>
-                    <div class="mt-3" id="scholarship">
-                        <h3>奨学金</h3>
-                        <li>2022年度 学部にて特に優秀な成績を収めた個人に送られる"中央大学 国際経営学部 学部長賞給付奨学金"に採用されました。</li>
-                        <li>2023年度 <a href="https://toruyoshikawa.org/" target="_blank">一般財団法人吉川徹財団</a> 第一期奨学生に採用されました。</li>
-                        <li>2024年度 <a href="https://www.advan.co.jp/ikueikai/" target="_blank">公益財団法人 アドヴァン山形育英会</a> 奨学生に採用されました。</li>
-                        <li>2024年度 大学院給付奨学生 に採用されました。</li>
-                    </div>
-                    <div class="mt-3" id="project">
-                        <h3>ゼミ関係</h3>
-                        <li>株式会社三技協様の協力のもと、ゼミ活動で行った"SHIPsプロジェクト"にて考案したビジネスアイデアを、住友重機械プロセス機器株式会社様の本社でプレゼンしました。</li>
-                    </div>
-                    <div class="mt-3" id="volunteer">
-                        <h3>ボランティア</h3>
-                        <li>八王子市立由木東小学校にて、<a href="https://www.chuo-u.ac.jp/uploads/2023/09/academics_faculties_teachingcourse_project_20230607_14_28.pdf?1693958400091" target="_blank">小学1年生が初めてパソコンを扱う授業のボランティア</a>に参加しました。</li>
-                    </div>
-                </ul>
-            </div>
-        </div>
-        <hr>
-        <div class="school">
-            <h2 class="text-center">学歴</h2>
-            <div class="shadow p-3 mb-5 bg-light border border-primary mr-1 ml-1">
-                <p>北海道札幌国際情報高等学校グローバルビジネス科　卒業</p>
-                <p>中央大学 国際経営学部 国際経営学科　早期卒業</p>
-                <p>中央大学大学院 経済学研究科 博士前期課程　在学中</p>
-            </div>
-        <div>
-        <hr>
-        <div class="lisence">
-            <h2 class="text-center mt-4">資格</h2>
-            <div class="shadow p-3 mb-5 bg-light border border-primary mr-1 ml-1">
-                <div class="highschool">
-                    <h3>高校</h3>
-                    <ul>
-                        <li>全商 情報処理検定ビジネス情報部門１級</li>
-                        <li>全商 商業経済検定試験１級</li>
-                        <li>全商 英語検定試験１級</li>
-                        <li>全経 簿記能力検定試験３級</li>
-                        <li>文章読解・作成能力検定 準二級</li>
-                        <li>IPA主催 ITパスポート試験</li>
-                    </ul>
-                </div>
-                <div class="university">
-                    <h3>大学</h3>
-                    <ul>
-                        <li>個人情報管理士（特定）</li>
-                        <li>IPA主催 基本情報技術者試験</li>
-                        <li>IPA主催 情報セキュリティマネジメント試験</li>
-                        <li>３級ファイナンシャル・プランニング技能士</li>
-                        <li>２級ファイナンシャル・プランニング技能士（一部合格）</li>
-                        <li>文部科学省後援 ビジネス実務マナー検定２級</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="annotation pl-2 pr-2">
-            <hr>
-            <p><strong>お問い合わせはこちら</strong><br>
-                大学メール：<a href="mailto:a21.chgr&#64;g.chuo-u.ac.jp">a21.chgr&#64;g.chuo-u.ac.jp</a>（2026/3/31まで）<br>
-                個人メール：<a href="mailto:kamoda.yohei&#64;gmail.com">kamoda.yohei&#64;gmail.com</a>
-            </p>
-            <hr>
-            <p>更新：2024/5/24</p>
-            <hr>
-        </div>
+    <div class="redirect-container">
+        <div class="logo">🚀</div>
+        <h1>サイトが新しくなりました！</h1>
+        <div class="loading"></div>
+        <p>新しいポートフォリオサイトに移動中...</p>
+        <div class="countdown" id="countdown">3秒後に自動的にリダイレクトします</div>
+        
+        <a href="https://kammmmow.github.io/kamoda-portfolio/" class="redirect-link">
+            すぐに新サイトへ移動
+        </a>
     </div>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/js/modaal.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
-    <script src="script.js"></script>
+
+    <script>
+        // JavaScriptでのリダイレクト（フォールバック）
+        let countdown = 3;
+        const countdownElement = document.getElementById('countdown');
+        
+        const timer = setInterval(() => {
+            countdown--;
+            if (countdown > 0) {
+                countdownElement.textContent = `${countdown}秒後に自動的にリダイレクトします`;
+            } else {
+                countdownElement.textContent = 'リダイレクト中...';
+                clearInterval(timer);
+                // メタタグでのリダイレクトが失敗した場合のフォールバック
+                window.location.href = 'https://kammmmow.github.io/kamoda-portfolio/';
+            }
+        }, 1000);
+        
+        // 即座にリダイレクト（最優先）
+        setTimeout(() => {
+            window.location.href = 'https://kammmmow.github.io/kamoda-portfolio/';
+        }, 3000);
+    </script>
 </body>
 </html>
